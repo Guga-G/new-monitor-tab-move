@@ -3,7 +3,7 @@
 // MV3 Service Worker
 // =====================================================
 
-const DEBUG = true; // set false when fully stable
+const DEBUG = false; // set false when fully stable
 const DEBOUNCE_MS = 120;
 
 let lastRun = 0;
@@ -269,3 +269,4 @@ async function focusAndMaximize(winId, area) {
 function promisify(fn, ...args) {
   return new Promise(res => fn(...args, r => res(r)));
 }
+
