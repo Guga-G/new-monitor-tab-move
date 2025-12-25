@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "New Monitor Tab Move",
+  "version": "1.1.0",
+  "description": "Ultra-fast move of active tab to next monitor with fullscreen restore (YouTube/Twitch).",
+  "permissions": [
+    "tabs",
+    "windows",
+    "system.display",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "incognito": "split",
+  "commands": {
+    "move-normal": {
+      "suggested_key": { "default": "Ctrl+Shift+1" },
+      "description": "Normal → Normal (next monitor)"
+    },
+    "move-incog": {
+      "suggested_key": { "default": "Ctrl+Shift+2" },
+      "description": "Incognito → Incognito (next monitor)"
+    }
+  }
+}
