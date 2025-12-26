@@ -1,4 +1,4 @@
-# New Monitor Tab Move
+# Dual Monitor Tab Move
 
 Move the active Chrome tab to the next monitor and merge it into an existing window,
 while preserving fullscreen state on supported sites (YouTube, Twitch).
